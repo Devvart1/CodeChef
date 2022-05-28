@@ -1,0 +1,57 @@
+//https://www.codechef.com/START40D/problems/INFINITY 
+
+   #include <bits/stdc++.h>
+#define ll long long int
+#define vector vector<ll>
+#define vector2d vector<vector<ll>>
+#define push push_back
+#define pop() pop_back()
+#define asize(arr) sizeof(arr)/sizeof(arr[0])
+#define amax(arr) *max_element(arr,arr+asize(arr))
+#define amin(arr) *min_element(arr,arr+asize(arr))
+#define asort(arr) sort(arr,arr+asize(arr))
+#define asortd(arr) sort(arr,arr+asize(arr),greater<ll>())
+#define absearch(arr,val) binary_search(arr,arr+asize(arr),val)
+#define arev(arr) reverse(arr,arr+asize(arr))
+#define vmax(vec) *max_element(vec.begin(),vec.end())
+#define vmin(vec) *min_element(vec.begin(),vec.end())
+#define vsort(vec) sort(vec.begin(),vec.end())
+#define vsortd(vec) sort(vec.begin(),vec.end(),greater<ll>())
+#define vbsearch(vec,val) binary_search(vec.begin(),vec.end(),val)
+#define vrev(vec) reverse(vec.begin(),vec.end())
+#define pi 2*acos(0.0)
+
+    using namespace std;
+
+
+    
+    int main() 
+    {
+ios::sync_with_stdio(false);cin.tie(0);
+        int t;
+    	cin>>t;
+    	while(t--)
+    	{
+    	    
+    	   ll n;
+    	   cin>>n;
+    	   ll ans=0;
+    	   n--;
+    	   ans=(n/5)*2;
+    	   n=n%5;
+    	   if(n==4)
+    	   ans+=2;
+    	   else if(n!=0)
+    	   ans++;
+    	  
+    	   
+    	   cout<<ans<<endl;
+    	}
+    	return 0;
+    }
+
+
+
+
+
+
